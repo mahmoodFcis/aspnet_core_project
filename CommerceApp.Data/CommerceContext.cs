@@ -26,5 +26,10 @@ namespace CommerceApp.Data
                 optionsBuilder.UseSqlServer(@"Server=.;initial catalog=ProductsDb;integrated security=true;");
             }
         }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Ignore<ProductRating>();
+
+        }
     }
 }

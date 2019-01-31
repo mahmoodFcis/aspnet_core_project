@@ -10,6 +10,8 @@ namespace CommerceApp.Client
             ProductRepository productRepository = new ProductRepository();
             productRepository.Add(new Data.Product() { Code = "PC", Name = "Juice", Price = 40 });
 
+            productRepository.GetAll();
+
         }
     }
 }

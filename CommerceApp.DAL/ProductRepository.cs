@@ -1,6 +1,9 @@
 ﻿using CommerceApp.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace CommerceApp.DAL
 {
@@ -16,7 +19,10 @@ namespace CommerceApp.DAL
             db.Products.Add(p);
             db.SaveChanges();
         }
-
+        public List<Product> GetAll()
+        {
+            return db.Products.FromSql<Product>("select * from Products").ToList();
+        }
         public void AddRange(ICollection products)
         {
             db.AddRange(products);
