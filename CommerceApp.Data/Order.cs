@@ -13,8 +13,8 @@ namespace CommerceApp.Data
         public decimal Discount { get; set; }
         public decimal Net { get; set; }
         public OrderStatus Status { get; set; }
-        public virtual Customer Customer { get; set; }
-        public virtual List<OrderDetail> OrderDetails { get; set; }
+        public  Customer Customer { get; set; }
+        public  List<OrderDetail> OrderDetails { get; set; }
     }
 }
 

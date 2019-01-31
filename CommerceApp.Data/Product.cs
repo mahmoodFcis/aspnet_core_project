@@ -11,7 +11,7 @@ namespace CommerceApp.Data
         public string Description { get; set; }
         public string Code { get; set; }
         public decimal Price { get; set; }
-        public virtual Category Category { get; set; }
+        public  Category Category { get; set; }
         public List<ProductRating> Ratings { get; set; }
         public string ImageUrl { get; set; }
 

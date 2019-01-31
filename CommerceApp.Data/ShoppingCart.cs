@@ -7,7 +7,7 @@ namespace CommerceApp.Data
     public class ShoppingCart
     {
         public int ID { get; set; }
-        public virtual Customer Customer { get; set; }
+        public  Customer Customer { get; set; }
         public DateTime CreationDate { get; set; }
         public CartStatus Status { get; set; }
     }

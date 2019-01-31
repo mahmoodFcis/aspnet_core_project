@@ -12,7 +12,7 @@ namespace CommerceApp.Data
         public Gender Gender { get; set; }
         public string Email { get; set; }
 
-        public virtual List<Order> Orders { get; set; }
-        public virtual List<ShoppingCart> Carts { get; set; }
+        public  List<Order> Orders { get; set; }
+        public  List<ShoppingCart> Carts { get; set; }
     }
 }
